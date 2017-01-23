@@ -2,9 +2,6 @@
 	"ImportPath": "github.com/bizoton19/open-api-in-go",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v77",
-	"Packages": [
-		"./..."
-	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/ant0ine/go-json-rest/rest",

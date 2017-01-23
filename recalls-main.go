@@ -13,11 +13,11 @@ import (
 
 func main() {
 	//register a hndler for /recalls/1
-	initApi()
+	initAPI()
 	//log.Fatal(http.ListenAndServe(":8080", initApi()))
 }
 
-func initApi() http.Handler {
+func initAPI() http.Handler {
 	api := rest.NewApi()
 	api.Use(rest.DefaultDevStack...)
 	router, err := rest.MakeRouter(
