@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/bizoton19/open-api-in-go",
-	"GoVersion": "go1.5",
+	"GoVersion": "go1.7",
 	"GodepVersion": "v77",
 	"Packages": [
 		"./..."
