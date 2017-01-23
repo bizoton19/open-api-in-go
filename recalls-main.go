@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"strconv"
 
 	"github.com/ant0ine/go-json-rest/rest"
@@ -14,7 +15,7 @@ import (
 func main() {
 	//register a hndler for /recalls/1
 	initAPI()
-	//log.Fatal(http.ListenAndServe(":8080", initApi()))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), initAPI()))
 }
 
 func initAPI() http.Handler {
